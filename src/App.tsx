@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import heroImage from './assets/hero-image-1440.png';
+import heroMobileImage from './assets/hero-mobile.png';
 import logoMark from './assets/logo.svg';
 import footerLogo from './assets/logo-footer.png';
 
@@ -122,7 +123,10 @@ export default function App() {
 
       <section className="hero-image">
         <div className="image-frame">
-          <img src={heroImage} alt="Clawplay app preview" />
+          <picture>
+            <source media="(max-width: 600px)" srcSet={heroMobileImage} />
+            <img src={heroImage} alt="Clawplay app preview" />
+          </picture>
         </div>
       </section>
 
