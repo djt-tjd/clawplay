@@ -317,32 +317,36 @@
 }
 
 @media (max-width: 600px) {
-  .header,
+  .page {
+    gap: 64px;
+  }
+
   .hero,
   .features,
   .hero-cta,
   .hero-copy,
   .hero-image {
-    text-align: center;
+    text-align: left;
   }
 
   .header {
-    justify-content: center;
+    justify-content: space-between;
+    text-align: left;
   }
 
   .header-link {
-    width: 100%;
-    text-align: center;
+    width: auto;
+    text-align: right;
   }
 
   .hero {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero-copy,
   .hero-cta {
-    align-items: center;
-    padding: 24px 0 0;
+    align-items: flex-start;
+    padding: 16px 0 0;
   }
 
   .cta-form {
@@ -350,11 +354,13 @@
   }
 
   .features {
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .feature {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-image {
@@ -387,6 +393,10 @@
   .hero-copy h1 {
     font-size: 36px;
     line-height: 40px;
+  }
+
+  .footer {
+    padding: 40px 0;
   }
 
   .image-frame {
