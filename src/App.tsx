@@ -62,7 +62,6 @@ export default function App() {
         <div className="logo">
           <img src={logoMark} alt="Clawplay logo" />
         </div>
-        <p className="header-tagline">The AI app that actually gets things done.</p>
         <a className="header-link" href="#waitlist">
           Follow us on X
         </a>
@@ -132,6 +131,7 @@ export default function App() {
 
       <footer className="footer">
         <img src={footerLogo} alt="Clawplay" />
+        <p className="footer-tagline">The AI app that actually gets things done.</p>
       </footer>
     </div>
   );
