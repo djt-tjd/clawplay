@@ -62,7 +62,12 @@ export default function App() {
         <div className="logo">
           <img src={logoMark} alt="Clawplay logo" />
         </div>
-        <a className="header-link" href="#waitlist">
+        <a
+          className="header-link"
+          href="https://x.com/Clawplayapp"
+          target="_blank"
+          rel="noreferrer"
+        >
           Follow us on X
         </a>
       </header>
